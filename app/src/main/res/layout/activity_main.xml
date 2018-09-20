@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,26 +25,61 @@
             android:orientation="horizontal"
             android:layout_marginTop="10dp">
             <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/prompt"
+                android:text="@string/sub_prompt"
                 android:textSize="22sp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_sub"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/subtotal"
-                android:inputType="text"
-                android:hint="@string/hint"
+                android:id="@+id/et_subtotal"
+                android:inputType="numberDecimal"
+                android:hint="@string/sub_hint"
                 android:textSize="22sp"/>
-            <Button
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_submit"
+                android:id="@+id/tv_tip"
+                android:text="@string/tip_prompt"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="@string/tip_hint"
+                android:id="@+id/et_tip"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/percent_sign"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/enter"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"/>
+                android:id="@+id/btn_submit"/>
         </LinearLayout>
 
     </LinearLayout>

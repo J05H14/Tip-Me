@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Tip Me</string>
-    <string name="hint">Sub Total</string>
-    <string name="prompt">Enter Sub-Total: </string>
+    <string name="sub_hint">Sub Total</string>
+    <string name="sub_prompt">Enter Sub-Total: </string>
     <string name="enter">Submit</string>
+    <string name="tip_prompt">Enter Tip Percentage:</string>
+    <string name="tip_hint">Tip Percent</string>
+    <string name="percent_sign">%</string>
 </resources>
